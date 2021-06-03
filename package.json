@@ -1,0 +1,29 @@
+{
+  "name": "node-sitemap-generator",
+  "version": "1.0.0",
+  "description": "A simple node js utility script/package to generate sitemap.xml file a simple static site or React",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "jsonschema": "^1.4.0",
+    "typescript": "^4.3.2",
+    "xml-formatter": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecubers/node-sitemap-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecubers/node-sitemap-generator/issues"
+  },
+  "homepage": "https://github.com/codecubers/node-sitemap-generator#readme"
+}

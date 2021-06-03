@@ -1,0 +1,139 @@
+[{
+    "loc": "",
+    "changefreq": "",
+    "lastmod": "",
+    "priority": "",
+    "images": [{
+        "loc": "",
+        "title": "",
+        "caption": "",
+        "geo_location": "",
+        "license": ""
+    }]
+},{
+    "loc": "/dashboard",
+    "changefreq": "weekly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.8"
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-ICU-Beds-Availability-Report/",
+    "changefreq": "hourly",
+    "priority": "0.8",
+    "images": [{
+        "loc": "/img/Telangana-ICU-Beds-Availability-Report.PNG",
+        "title": "Telangana State Government ICU Beds Availability Report",
+        "caption": "Telangana State Government ICU Beds Availability Report"
+    }]
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-Oxygen-Beds-Availability-Report/",
+    "changefreq": "hourly",
+    "priority": "0.8",
+    "images": [{
+        "loc": "/img/Telangana-Oxygen-Beds-Availability-Report.PNG",
+        "title": "Telangana State Government Oxygen Beds Availability Report",
+        "caption": "Telangana State Government Oxygen Beds Availability Report"
+    }]
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-General-Beds-Availability-Report/",
+    "changefreq": "hourly",
+    "priority": "0.8",
+    "images": [{
+        "loc": "/img/Telangana-General-Beds-Availability-Report.PNG",
+        "title": "Telangana State Government General Beds Availability Report",
+        "caption": "Telangana State Government General Beds Availability Report"
+    }]
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-Beds-Availability-By-Hopsital/",
+    "changefreq": "hourly",
+    "priority": "0.8",
+    "images": [{
+        "loc": "/img/Telangana-Beds-Availability-By-Hopsital.PNG",
+        "title": "Telangana State Government Beds Availability By Hopsital",
+        "caption": "Telangana State Government Beds Availability By Hopsital"
+    }]
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-Government-Covid-Hospital-Contact-Numbers/",
+    "changefreq": "hourly",
+    "priority": "0.8",
+    "images": [{
+        "loc": "/img/Telangana-Government-Covid-Hospital-Contact-Numbers.PNG",
+        "title": "Telangana State Government Covid Hospital Contact Numbers",
+        "caption": "Telangana State Government Covid Hospital Contact Numbers"
+    }]
+},{
+    "loc": "/dashboard/INDIA/PAN-INDIA-Tocilizumab-Distributors-List",
+    "changefreq": "hourly",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-TG/Hyderabad-Black-Fungus-Treating-Hopsitals",
+    "changefreq": "hourly",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-GJ/Bhavnagar-Covid-19-Bed-Info",
+    "changefreq": "hourly",
+    "priority": "0.7"
+},{
+    "loc": "/dynamic/Varanasi-Covid19-Hospitals-Status",
+    "changefreq": "daily",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-KA/Bengaluru-Hopsital-Bed-Status-By-BBMP",
+    "changefreq": "hourly",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/INDIA/PAN-INDIA-Tocilizumab-Distributors-List",
+    "changefreq": "hourly",
+    "priority": "0.7"
+},{
+    "loc": "/dynamic/COVID-19-Guidelines-Manual-Telugu-Version.pdf",
+    "changefreq": "never",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-TG/Hyderabad-Black-Fungus-Treating-Hopsitals",
+    "changefreq": "daily",
+    "priority": "0.7"
+},{
+    "loc": "/dynamic/Telangana-State-Jeevandhara-Janaushadhi-Medical-Shops",
+    "changefreq": "never",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-OR/Covid-19-Directory-Odisha-Portal",
+    "changefreq": "monthly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.7",
+    "images": [{
+        "loc": "https://firebasestorage.googleapis.com/v0/b/perfinmngr.appspot.com/o/images%2Fodishacovid.JPG?alt=media&token=f5bbd0ed-2142-42ad-9a3a-04ac40d1fc8d",
+        "title": "Covid-19 Directory Odisha",
+        "caption": "Covid-19 Directory Odisha"
+    },{
+        "loc": "https://odishacovid.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F66e0c0e3-df04-4157-8b09-60eb466933a8%2FScreenshot_2021-05-01_at_1.12.47_AM.png?table=block&id=cbef163a-a5fc-409f-9654-2214345f84c6&spaceId=bcc32d68-4335-4603-bf1d-32c6263e1695&width=3840&userId=&cache=v2",
+        "title": "Private COVDI-19 Testing Centres in Bhubaneswar",
+        "caption": "Private COVDI-19 Testing Centres in Bhubaneswar",
+        "geo_location": "Bhubaneswar, Odisha, India"
+    },{
+        "loc": "https://odishacovid.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdb5fc30f-6225-4717-931b-d92280f6af65%2FScreenshot_2021-05-01_at_1.13.14_AM.png?table=block&id=8710b1f4-cd20-48b0-9896-7671cfb8eb7d&spaceId=bcc32d68-4335-4603-bf1d-32c6263e1695&width=3840&userId=&cache=v2",
+        "title": "Government COVDI-19 Testing Centres in Bhubaneswar",
+        "caption": "Government COVDI-19 Testing Centres in Bhubaneswar",
+        "geo_location": "Bhubaneswar, Odisha, India"
+    }]
+},{
+    "loc": "/dashboard/IN-DL/Gurugram-Covid-Combat-Companion-Portal",
+    "changefreq": "monthly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-AP/Covid-Essential-Drug-Stockists-information",
+    "changefreq": "monthly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-OR/Odisha-Covid-19-Dashboard",
+    "changefreq": "monthly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.7",
+    "images":[{
+        "loc": "https://firebasestorage.googleapis.com/v0/b/perfinmngr.appspot.com/o/images%2FOdisha-covid19-dashboard.JPG?alt=media&token=50ecbdf5-713e-4acc-a559-329abd66898f",
+        "title": "Odisha State Official Covid19 Dashboard",
+        "caption": "Odisha State Official Covid19 Dashboard"
+    }]
+}]
