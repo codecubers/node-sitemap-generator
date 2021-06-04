@@ -1,6 +1,50 @@
 'use strict';
 
 var xmlFormatter = require('xml-formatter');
+var Validator = require('jsonschema').Validator;
+var v = new Validator();
+  
+var imageSchema = {
+  "id": "/Image",
+  "type": "object",
+  "properties": {
+    "loc": {"type": "string"},
+    "title": {"type": "string"},
+    "caption": {"type": "string"},
+    "geo_location": {"type": "string"},
+    "location": {"type": "string"}
+  },
+  "required": ["loc"]
+};
+v.addSchema(imageSchema, "/Image");
+
+var urlSchema = {
+  "id": "/Url",
+  "type": "object",
+  "properties": {
+    "loc": {"type": "string"},
+    "changeFreq": {"type": "string"},
+    "lastmod": {"type": "string"},
+    "priority": {"type": "string"},
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "/Image" 
+      }
+    }
+  },
+  "required": ["loc"]
+};
+v.addSchema(urlSchema);
+
+var urlSetSchema = {
+  "type": "array",
+  "items" : {
+    "$ref": "/Url"
+  }
+};
+
+let jsonUrls = [];
 
 String.prototype.htmlEscape = function htmlEscape(str) {
     //Ampersand	&	&amp;
@@ -83,7 +127,7 @@ function getImageTags(page) {
 
 function generatePageTags(pages) {
     //TODO: Ensure page is an array of Page (Or restrict it on type)
-    return pages.reduce((arr, page) => {
+    let tags = pages.reduce((arr, page) => {
         let { loc, changefreq, lastmod, priority } = page;
         if (loc) {
             if (!loc.startsWith('htt')) loc = 'https://dashboard.covid19fighters.page' + loc;
@@ -98,59 +142,24 @@ function generatePageTags(pages) {
         }
         return arr;
     }, []);
+    return tags;
 }
 
-
-const jsonValidate = function (data) {
-    var Validator = require('jsonschema').Validator;
-    var v = new Validator();
-     
-    // Address, to be embedded on Person
-    var addressSchema = {
-      "id": "/SimpleAddress",
-      "type": "object",
-      "properties": {
-        "lines": {
-          "type": "array",
-          "items": {"type": "string"}
-        },
-        "zip": {"type": "string"},
-        "city": {"type": "string"},
-        "country": {"type": "string"}
-      },
-      "required": ["country"]
-    };
-     
-    // Person
-    var schema = {
-      "id": "/SimplePerson",
-      "type": "object",
-      "properties": {
-        "name": {"type": "string"},
-        "address": {"$ref": "/SimpleAddress"},
-        "votes": {"type": "integer", "minimum": 1}
-      }
-    };
-     
-    var p = {
-      "name": "Barack Obama",
-      "address": {
-        "lines": [ "1600 Pennsylvania Avenue Northwest" ],
-        "zip": "DC 20500",
-        "city": "Washington",
-        "country": "USA"
-      },
-      "votes": "lots"
-    };
-     
-    v.addSchema(addressSchema, '/SimpleAddress');
-    console.log(v.validate(p, schema));
+//TODO: Returning error message?
+const addJsonUrls = function (data) {
+    let result = v.validate(data, urlSetSchema);
+    if (result.valid) {
+      jsonUrls = data;
+      return 'JSON data validated successfully';
+    }
+    return result.errors.join('\n');
 }
 
 //TODO: Create a schema for the excepted json and provide a method to validate.
-const generateSiteMap = function (pages, config={}) {
+const generateSiteMap = function (config={}) {
     let { styleSheet } = config;
-    let urls = generatePageTags(pages);
+    let urls = generatePageTags(jsonUrls);
+    console.log(urls);
     let sitemap = TAG_XML;
     //TODO: make it configurable and optional
     if (styleSheet) sitemap += getStyleSheet(styleSheet);
@@ -167,5 +176,5 @@ const generateSiteMap = function (pages, config={}) {
 
 module.exports = {
     generateSiteMap,
-    jsonValidate
+    addJsonUrls
 };

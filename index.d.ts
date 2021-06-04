@@ -12,7 +12,7 @@ export declare type SiteMapGeneratorConfig = {
 };
 export declare type Image = {
   loc: string;
-  title: string;
+  title?: string;
   caption?: string;
   geo_location?: string;
   license?: string;
@@ -24,8 +24,8 @@ export declare type Page = {
   priority?: string | number;
   images?: Image[];
 };
-export declare function jsonValidate(): any;
-export declare function generateSiteMap(pages: Page[], config?: SiteMapGeneratorConfig): string;
+export declare function addJsonUrls(data: []): string;
+export declare function generateSiteMap(config?: SiteMapGeneratorConfig): string;
 export declare const getLocation: (loc: string, cdata?: boolean) => string;
 export declare const getChangeFreq: (freq?: FREQUENCY, cdata?: boolean) => string;
 export declare const getLastModified: (mod?: string, cdata?: boolean) => string;
