@@ -1,5 +1,5 @@
 {
-  "name": "node-sitemap-generator",
+  "name": "@codecubers/sitemap-generator",
   "version": "1.0.0",
   "description": "A simple node js utility script/package to generate sitemap.xml file a simple static site or React",
   "main": "index.js",
