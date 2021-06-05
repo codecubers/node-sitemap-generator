@@ -8,6 +8,7 @@ export declare enum FREQUENCY {
   never = "never"
 }
 export declare type SiteMapGeneratorConfig = {
+  domain: string,
   styleSheet?: string;
 };
 export declare type Image = {
