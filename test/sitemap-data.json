@@ -1,0 +1,35 @@
+[{
+    "loc": "/dashboard"
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-ICU-Beds-Availability-Report/",
+    "changefreq": "hourly"
+},{
+    "loc": "/dashboard/IN-TG/Govt-COVID19-Hosp-Reports/Telangana-Oxygen-Beds-Availability-Report/",
+    "changefreq": "daily",
+    "priority": "0.8"
+},{
+    "loc": "/dashboard/IN-AP/Covid-Essential-Drug-Stockists-information",
+    "changefreq": "monthly",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.7"
+},{
+    "loc": "/dashboard/IN-OR/Covid-19-Directory-Odisha-Portal",
+    "changefreq": "never",
+    "lastmod": "2021-05-30T18:00:00+00:00",
+    "priority": "0.9",
+    "images": [{
+        "loc": "https://firebasestorage.googleapis.com/v0/b/perfinmngr.appspot.com/o/images%2Fodishacovid.JPG?alt=media&token=f5bbd0ed-2142-42ad-9a3a-04ac40d1fc8d"
+    },{
+        "loc": "https://firebasestorage.googleapis.com/v0/b/perfinmngr.appspot.com/o/images%2Fodishacovid.JPG",
+        "title": "Covid-19 Directory Odisha"
+    },{
+        "loc": "https://odishacovid.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F66e0c0e3-df04-4157-8b09-60eb466933a8%2FScreenshot_2021-05-01_at_1.12.47_AM.png",
+        "title": "Private COVDI-19 Testing Centres in Bhubaneswar",
+        "caption": "Private COVDI-19 Testing Centres in Bhubaneswar"
+    },{
+        "loc": "https://odishacovid.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdb5fc30f-6225-4717-931b-d92280f6af65%2FScreenshot_2021-05-01_at_1.13.14_AM.png",
+        "title": "Government COVDI-19 Testing Centres in Bhubaneswar",
+        "caption": "Government COVDI-19 Testing Centres in Bhubaneswar",
+        "geo_location": "Bhubaneswar, Odisha, India"
+    }]
+}]
