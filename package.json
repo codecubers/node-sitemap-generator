@@ -1,7 +1,7 @@
 {
-  "name": "@codecubers/sitemap-generator",
+  "name": "json-sitemap",
   "version": "1.0.0",
-  "description": "A simple node js utility script/package to generate sitemap.xml file a simple static site or React",
+  "description": "Generate sitemap.xml file from a Json file.",
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
@@ -13,13 +13,19 @@
     "@types/node": "^15.9.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd test && node test.js && cd .."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codecubers/node-sitemap-generator.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Sitemap Generator",
+    "Json to Sitemap",
+    "Sitemap.xml file",
+    "SEO sitemap",
+    "urlset url image"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
